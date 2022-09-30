@@ -20,6 +20,9 @@ li a:hover {
 }
 
 #links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 12pt;
 }
 
@@ -69,11 +72,16 @@ footer {
     font-size: 8pt;
 }
 
+#form {
+    order: 0;
+}
+
 .field {
     margin: 5px 0;
 }
 
 table {
+    order: 1;
     border-collapse: collapse;
 }
 
@@ -104,7 +112,15 @@ td:hover {
     #links {
         font-size: 14pt;
     }
-
+    
+    table {
+        order: 0;
+    }
+    
+    #form {
+        order: 1;
+    }
+    
     .logo-img img {
         width: 120px;
         height: 120px;
